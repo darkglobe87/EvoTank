@@ -1,0 +1,14 @@
+{
+  "id": "filter_feeder",
+  "displayName": "Filter Feeder",
+  "category": "metabolic",
+  "evoCost": 140,
+  "metabolicCost": 0.05,
+  "statModifiers": {
+    "maxIntake": { "op": "mul", "value": 1.4 }
+  },
+  "toleranceModifiers": {},
+  "visual": { "mesh": "meshes/filter_gills", "attachPoint": "head_front", "scaleWithSize": true },
+  "prerequisites": [],
+  "incompatibleWith": ["jaw"]
+}

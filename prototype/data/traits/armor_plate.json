@@ -1,0 +1,16 @@
+{
+  "id": "armor_plate",
+  "displayName": "Armor Plating",
+  "category": "defense",
+  "evoCost": 200,
+  "metabolicCost": 0.12,
+  "statModifiers": {
+    "armor": { "op": "add", "value": 5.0 },
+    "hp": { "op": "mul", "value": 1.5 },
+    "maxSpeed": { "op": "mul", "value": 0.85 }
+  },
+  "toleranceModifiers": {},
+  "visual": { "mesh": "meshes/armor_plate", "attachPoint": "body_shell", "scaleWithSize": true },
+  "prerequisites": [],
+  "incompatibleWith": []
+}

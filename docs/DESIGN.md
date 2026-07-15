@@ -458,3 +458,30 @@ before/alongside first implementation:
    works without pathfinding).
 4. **Extinction/rescue state machine:** unit-test the count==1 and count==0 transitions,
    including the "went extinct while idle" resume path.
+
+---
+
+## 12. Prototype validation results (de-risk phase — DONE)
+
+A headless Python prototype (`prototype/`) implemented §2–§8 and ran all four §11
+experiments. Full write-up: `prototype/FINDINGS.md`. Summary of what the design got
+right and what had to change:
+
+- **Slow-burn pacing (§3, §11.1): confirmed.** Heavier builds cost ~2.5× a scavenger and
+  take ~3× longer to reproduce; population settles at a stable ~68–80 (in the 50–150
+  target band), robust across seeds.
+- **Idle ≈ live (§6, §11.2): confirmed within band** — settled-regime RMSE ~14 %,
+  final-population drift ~9 %. The mean-field cohort model predicts the long-run
+  attractor (its job) but *cannot* reproduce live spatial transients — acceptable per §6.5.
+- **Niche partitioning (§4, §11.3): confirmed** — species separate cleanly by depth with
+  no pathfinding.
+- **Fixes folded back into this design:**
+  - Metabolic stress (§4.2) must stay **modest** — a high stress penalty caused a
+    seed-dependent *starve-in-your-comfort-zone* collapse while the tank was globally
+    full of food. **Recommended design change: spawn food preferentially in favorable
+    zones (§4.3) so "food blooms where organisms live,"** removing the conflict at the
+    source.
+  - Idle integration (§6.3) must use a **stable exponential update with a capped
+    sub-step**, not naive Euler, and cohorts must **dilute mean-age by births** or they
+    spuriously age to extinction.
+  - Trait tolerance modifiers (§5.1) apply **on top of** continuous genes, not before.

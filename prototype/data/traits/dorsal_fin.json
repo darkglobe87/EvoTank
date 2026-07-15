@@ -1,0 +1,15 @@
+{
+  "id": "dorsal_fin",
+  "displayName": "Dorsal Fin",
+  "category": "locomotion",
+  "evoCost": 120,
+  "metabolicCost": 0.05,
+  "statModifiers": {
+    "maxSpeed": { "op": "add", "value": 1.0 },
+    "turnRate": { "op": "mul", "value": 1.15 }
+  },
+  "toleranceModifiers": {},
+  "visual": { "mesh": "meshes/dorsal_fin", "attachPoint": "spine_mid", "scaleWithSize": true },
+  "prerequisites": [],
+  "incompatibleWith": []
+}

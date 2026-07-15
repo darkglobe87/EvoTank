@@ -1,0 +1,14 @@
+{
+  "id": "jaw",
+  "displayName": "Predatory Jaw",
+  "category": "offense",
+  "evoCost": 180,
+  "metabolicCost": 0.06,
+  "statModifiers": {
+    "attackPower": { "op": "add", "value": 3.0 }
+  },
+  "toleranceModifiers": {},
+  "visual": { "mesh": "meshes/jaw", "attachPoint": "head_front", "scaleWithSize": true },
+  "prerequisites": [],
+  "incompatibleWith": ["filter_feeder"]
+}

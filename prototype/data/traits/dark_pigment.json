@@ -1,0 +1,14 @@
+{
+  "id": "dark_pigment",
+  "displayName": "Dark Pigment",
+  "category": "adaptation",
+  "evoCost": 60,
+  "metabolicCost": 0.02,
+  "statModifiers": {},
+  "toleranceModifiers": {
+    "lightOptimum": { "op": "add", "value": -0.25 }
+  },
+  "visual": { "mesh": "meshes/pigment_overlay", "attachPoint": "body_shell", "scaleWithSize": true },
+  "prerequisites": [],
+  "incompatibleWith": []
+}

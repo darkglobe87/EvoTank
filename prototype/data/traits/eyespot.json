@@ -1,0 +1,14 @@
+{
+  "id": "eyespot",
+  "displayName": "Eyespot",
+  "category": "sensory",
+  "evoCost": 80,
+  "metabolicCost": 0.03,
+  "statModifiers": {
+    "senseRadius": { "op": "mul", "value": 1.5 }
+  },
+  "toleranceModifiers": {},
+  "visual": { "mesh": "meshes/eyespot", "attachPoint": "head", "scaleWithSize": false },
+  "prerequisites": [],
+  "incompatibleWith": []
+}
