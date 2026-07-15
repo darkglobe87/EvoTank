@@ -1,0 +1,15 @@
+{
+  "id": "gills",
+  "displayName": "Deep Gills",
+  "category": "metabolic",
+  "evoCost": 150,
+  "metabolicCost": 0.04,
+  "statModifiers": {},
+  "toleranceModifiers": {
+    "pressureOptimum": { "op": "add", "value": 0.25 },
+    "pressureRange": { "op": "mul", "value": 1.2 }
+  },
+  "visual": { "mesh": "meshes/gills", "attachPoint": "head_side", "scaleWithSize": true },
+  "prerequisites": [],
+  "incompatibleWith": []
+}
