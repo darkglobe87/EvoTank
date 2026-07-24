@@ -485,3 +485,12 @@ right and what had to change:
     sub-step**, not naive Euler, and cohorts must **dilute mean-age by births** or they
     spuriously age to extinction.
   - Trait tolerance modifiers (§5.1) apply **on top of** continuous genes, not before.
+
+---
+
+## 13. Where the project stands
+
+Design (this document), the headless de-risk prototype, and the Godot vertical
+slice are complete. For an audit of what actually exists in the repo versus what
+this design specifies — and the phased plan from here to release — see
+[`ROADMAP.md`](./ROADMAP.md).
